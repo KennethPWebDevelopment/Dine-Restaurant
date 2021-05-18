@@ -1,0 +1,152 @@
+body {
+    font-size: 16px;
+    font-family: 'Spartan', sans-serif;
+}
+
+#bgCover {
+    background: url('images/homepage/hero-bg-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    width: 100%;
+    height: 820px;
+}
+
+h1 {
+    font-weight: 700;
+    color: white;
+    padding: 65px 0px 130px 10px;
+    font-size: 2.5rem;
+}
+
+#headerContent {
+    padding: 0px 0px 153px 167px;
+    width: 50%;
+}
+
+#edHeader {
+    color: white;
+    font-weight: 300;
+    font-size: 8vh;
+    line-height: 85px;
+    letter-spacing: -0.8px;
+    margin-bottom: 35px;
+}
+
+.pWhite {
+    color: white;
+    font-size: 1.9vh;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: -0.225px;
+    margin-bottom: 35px;
+}
+
+.button-white {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    letter-spacing: 2px;
+    padding: 20px 45px;
+}
+
+#headerBlack {
+    height: 100%;
+    width: 33%;
+    background-color: ;
+    position: absolute;
+    bottom: 0px;
+    left: -1%;
+}
+
+main {
+    height: 100vh;
+    background-color: white;
+}
+
+#enjoyablePlaceDesktop {
+    position: relative;
+    top: -65px;
+    margin-left: 167px;
+    margin-bottom: 9%;
+    z-index: 1;
+}
+
+#enjoyablePlaceHeader {
+    display: block;
+    text-align: left;
+    width: 30%;
+    position: absolute;
+    right: 10%;
+    bottom: -55%;
+    line-height: 27px;
+}
+
+#enjoyablePlaceHeader>h2 {
+   font-weight: 700;
+   margin-bottom: 4%;
+   font-size: 2.5rem;
+   line-height: 60px;
+}
+
+#greyBox {
+    height: 320px;
+    width: 895px;
+    background-color: #5C6779;
+    opacity: 0.10;
+    border-radius: 0px 75px 0px 0px;
+    position: absolute;
+    top: 130%;
+    z-index: -auto;
+}
+
+/* RIGHT SECTION */
+
+#enjoyablePlaceDesktopRight {
+    position: absolute;
+    top: 193% ;
+    left: 40%;
+    margin-left: 167px;
+    z-index: 1;
+}
+
+#enjoyablePlaceHeaderRight {
+    display: block;
+    text-align: left;
+    width: 30%;
+    position: absolute;
+    left: 10%;
+    bottom: -155%;
+    line-height: 27px;
+}
+
+#enjoyablePlaceHeaderRight>h2 {
+   font-weight: 700;
+   margin-bottom: 4%;
+   font-size: 2.5rem;
+   line-height: 60px;
+}
+
+#greyBoxRight {
+    height: 320px;
+    width: 65%;
+    background-color: #5C6779;
+    opacity: 0.10;
+    border-radius: 75px 0px 0px 0px;
+    position: absolute;
+    top: 230%;
+    right: 0px;
+    z-index: -auto;
+}
+
+.lines {
+    position: relative;
+    left: 82%;
+    top: 220px;
+    z-index: 1;
+    width: 160px;
+    height: 6px;
+    background-color: #9E7F66;
+    margin-bottom: 8px;
+}
