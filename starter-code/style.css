@@ -3,25 +3,47 @@ body {
     padding: 0px;
     font-family: 'Spartan', sans-serif;
     min-width: 1440px;
+    margin: 0 auto;
   
 }
 
+.container {
+    padding: 0px;
+}
+
 .container-fluid {
-    padding: 0em 4em;
+    padding: 0em 5em;
 }
 
 /* TYPOGRAPHY */
 
 h2 {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 0.3em;
+    font-size: 2.7rem;
+    font-weight: 600;
+    margin-bottom: 0.4em;
     line-height: 56px;
 }
 
-.section1Header p {
+h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+h4 {
     font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 35px;
+}
+
+.section1Header p, .section2Header p {
+    font-size: 1.3rem;
     line-height: 30px;
+}
+
+.menuItemsP {
+    font-size: 1rem;
+    margin-bottom: 0px;
 }
 
 /* HEADER */
@@ -35,32 +57,33 @@ h2 {
   padding: 4em 4em;
 }
 
-#headerText {
-    width: 50%;
 
+#headerText p {
+    width: 40%;
+    font-size: 1rem;
 }
 
 #logo {
     color: white;
-    font-weight: 700;
-    font-size: 1.3em;
+    font-weight: 600;
+    font-size: 1.2em;
     position: relative;
-    z-index: 2;
 }
 
 h1{
-    margin-top: 2.5em;
+    margin-top: 2.0em;
     margin-bottom: 0.2em;
     font-size: 4.5rem;
-    font-weight: 300;
-    line-height: 72px;
+    font-weight: 200;
+    line-height: 84px;
+    width: 60%;
 
 
 }
 
 p {
-    margin-bottom: 3em;
-    font-size: 1.1rem;
+    margin-bottom: 2em;
+    font-size: 1.2rem;
     font-weight: 300;
     line-height: 30px;
 
@@ -73,33 +96,88 @@ p {
     border: 1px solid white;
     border-radius: 0px;;
     letter-spacing: 2px;
-    padding: 20px 45px;   
+    padding: 20px 60px;   
     font-weight: 00;
- 
+}
+
+.btn:hover {
+    background-color: #FFFFFF; 
+    color: #17192B;
+    border-color: #17192B;
+}
+
+.btn:focus {
+    background-color: #FFFFFF; 
+    color: #17192B;
+    border-color: #17192B;
+}
+
+.blackButton {
+    background-color: black;
+    border: 1px solid black;
 }
 
 /* SECTION 1 */
 
-#enjoyablePlaceDesktop {
+.sectionOneImgs {
+    position: relative;
+}
+
+#enjoyablePlaceDesktopImg {
     margin-left: 4em;
     position: relative;
     top: -10%;
+    width: 90%;
 }
 
-#locallySourcedDesktop {
+#locallySourcedDesktopImg {
     position: relative;
-    right: -30%;
+    top: -12%;
+    right: 1%;
+    width: 137%;
+}
+
+#familyGatheringImg {
+    width: 90%;
+    margin-top: 11em;
+    position: absolute;
+    
+}
+
+.patternDivide {
+    margin-bottom: 3.4em;
+}
+
+.patternDivide2 {
+    position: absolute;
+    top: 10%;
+    right: 103%;
+}
+
+#patternLines1 {
+  width: 38%;
+  position: absolute;
+  top: 30%;
+  right: -60%;
+
+}
+
+#patternLines2 {
+    width: 25%;
+    position: absolute;
+    top: 20%;
+    left: -5%;
 }
 
 .section1Header {
    position: relative;
-   bottom: -200px;
+   bottom: -180px;
    left: 100px;
    width: 40%;
 }
 
 .section2Header {
-    margin-top: 23%;
+    margin-top: 25%;
     width: 40%;
 }
 
@@ -112,8 +190,8 @@ p {
     opacity: 0.10;
     border-radius: 0px 75px 0px 0px;
     position: absolute;
-    top: 129%;
-    left: 0px;
+    top: 37%;
+    left: -10%;
     z-index: -1;
 
 }
@@ -125,14 +203,94 @@ p {
     opacity: 0.10;
     border-radius: 75px 0px 0px 0px;
     float: right;
-    position: relative;
-    bottom: 385px;
-    right: -5%;
+    position: absolute;
+    top: 37%;
+    right: -65%;
     z-index: -1;
 }
 
-/* MEDIA QUERIES */
+#greyBox3 {
+    height: 320px;
+    width: 895px;
+    background-color: #5C6779 ;
+    opacity: 0.10;
+    border-radius: 0px 75px 0px 0px;
+    position: absolute;
+    top: -1%;
+    left: -69%;
+}
 
+/* SECTION 2 */
+
+#section2 {
+    width: 1440px;
+    height: 761px;
+    background-color: black;
+    color: white;
+}
+
+#highlightsMenuHeader {
+    width: 40%;
+    margin: auto 0;
+    margin-top: 16%;
+}
+
+#highlightsMenuFood {
+    width: 51.4%;
+    margin-left: 6em;
+    margin-top: 22%;
+}
+
+img {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.menuItem {
+    position: relative;
+    z-index: 1;
+}
+
+.patternLine {
+    position: absolute;
+    top: 14px;
+    right: 20px;
+    z-index: -1;
+
+}
+
+#hr {
+    display: block; height: 1px;
+    border: 0; border-top: 1px solid white;
+    margin: 1.5em 0em 1.5em 0em; padding: 0; 
+}
+
+
+/* SECTION 3 */
+
+#section3 {
+    width: 1440px;
+    height: 1000px;
+    background-color: white;
+}
+
+#familyGatheringDiv {
+    position: relative;
+}
+
+#familyGatheringHeading {
+ margin-top: 15em;
+}
+
+#slideSelections {
+    /* CHANGE OPACITY WHEN SELECTED */
+    color: #4C4C4C;
+    opacity: 0.5;
+    margin-top: 5em;
+    position: relative;
+}
+
+/* MEDIA QUERIES */
 
 /* TABLET: 425 - 768 */
 /* MOBILE: 320 - 425 */
