@@ -2,20 +2,35 @@ body {
     margin: 0px;
     padding: 0px;
     font-family: 'Spartan', sans-serif;
-    min-width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
-  
+    overflow: auto;
 }
+
+/* LAPTOP / DESKTOP */
+
+/* LAYOUT */
 
 .container {
     padding: 0px;
+    overflow: hidden;
 }
 
 .container-fluid {
-    padding: 0em 5em;
+    padding: 0em 4.2em;
 }
 
 /* TYPOGRAPHY */
+
+h1{
+    margin-top: 2.0em;
+    margin-bottom: 0.2em;
+    font-size: 4.5rem;
+    font-weight: 200;
+    line-height: 84px;
+    width: 60%;
+
+}
 
 h2 {
     font-size: 2.7rem;
@@ -36,88 +51,14 @@ h4 {
     line-height: 35px;
 }
 
-.section1Header p, .section2Header p {
-    font-size: 1.3rem;
-    line-height: 30px;
-}
-
-.menuItemsP {
-    font-size: 1rem;
-    margin-bottom: 0px;
-}
-
-/* HEADER */
-
-#header {
-  height: 820px;
-  color: white;
-  background-image: url('images/homepage/hero-bg-desktop.jpg');
-  background-size: 100%;
-  background-repeat: no-repeat;
-  padding: 4em 4em;
-}
-
-
-#headerText p {
-    width: 40%;
-    font-size: 1rem;
-}
-
-#logo {
-    color: white;
-    font-weight: 600;
-    font-size: 1.2em;
-    position: relative;
-}
-
-h1{
-    margin-top: 2.0em;
-    margin-bottom: 0.2em;
-    font-size: 4.5rem;
-    font-weight: 200;
-    line-height: 84px;
-    width: 60%;
-
-
-}
-
 p {
     margin-bottom: 2em;
     font-size: 1.2rem;
     font-weight: 300;
     line-height: 30px;
-
-
 }
 
-.btn {
-    background-color: transparent;
-    color: white;
-    border: 1px solid white;
-    border-radius: 0px;;
-    letter-spacing: 2px;
-    padding: 20px 60px;   
-    font-weight: 00;
-}
-
-.btn:hover {
-    background-color: #FFFFFF; 
-    color: #17192B;
-    border-color: #17192B;
-}
-
-.btn:focus {
-    background-color: #FFFFFF; 
-    color: #17192B;
-    border-color: #17192B;
-}
-
-.blackButton {
-    background-color: black;
-    border: 1px solid black;
-}
-
-/* SECTION 1 */
+/* IMGS */
 
 .sectionOneImgs {
     position: relative;
@@ -134,53 +75,107 @@ p {
     position: relative;
     top: -12%;
     right: 1%;
-    width: 137%;
+    width: 132%;
 }
 
 #familyGatheringImg {
-    width: 90%;
+    width: 85%;
     margin-top: 11em;
     position: absolute;
     
+}
+
+/* BUTTONS */
+
+a, 
+a:hover,
+a:focus,
+a:visited{
+    text-decoration: none !important;
+    color: inherit;
+}
+
+.btn {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 0px;;
+    letter-spacing: 2px;
+    padding: 20px 60px;   
+}
+
+#button {
+    outline: none !important;
+    box-shadow: none;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #FFFFFF; 
+    color: #17192B;
+    border-color: #17192B;
+}
+
+.blackButton {
+    background-color: black;
+    border: 1px solid black;
+}
+
+
+/* HEADER */
+
+#header {
+    width: 1440px;
+  height: 820px;
+  color: white;
+  background-image: url('images/homepage/hero-bg-desktop.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 4em 4em;
+}
+
+#headerText p {
+    width: 40%;
+    font-size: 1rem;
+}
+
+#logo {
+    color: white;
+    font-weight: 600;
+    font-size: 1.2em;
+    position: relative;
+}
+
+/* SECTION 1 */
+
+.section1Header1 p, .section2Header p {
+    font-size: 1.3rem;
+    line-height: 30px;
 }
 
 .patternDivide {
     margin-bottom: 3.4em;
 }
 
-.patternDivide2 {
-    position: absolute;
-    top: 10%;
-    right: 103%;
-}
-
 #patternLines1 {
   width: 38%;
   position: absolute;
   top: 30%;
-  right: -60%;
+  right: -50%;
 
 }
 
-#patternLines2 {
-    width: 25%;
-    position: absolute;
-    top: 20%;
-    left: -5%;
-}
-
-.section1Header {
+.section1Header1 {
    position: relative;
    bottom: -180px;
    left: 100px;
    width: 40%;
 }
 
-.section2Header {
+.section1Header2 {
     margin-top: 25%;
     width: 40%;
 }
-
 
 
 #greyBox1 {
@@ -191,7 +186,7 @@ p {
     border-radius: 0px 75px 0px 0px;
     position: absolute;
     top: 37%;
-    left: -10%;
+    left: -9%;
     z-index: -1;
 
 }
@@ -205,19 +200,8 @@ p {
     float: right;
     position: absolute;
     top: 37%;
-    right: -65%;
+    right: -59.9%;
     z-index: -1;
-}
-
-#greyBox3 {
-    height: 320px;
-    width: 895px;
-    background-color: #5C6779 ;
-    opacity: 0.10;
-    border-radius: 0px 75px 0px 0px;
-    position: absolute;
-    top: -1%;
-    left: -69%;
 }
 
 /* SECTION 2 */
@@ -246,6 +230,11 @@ img {
     padding-bottom: 0px;
 }
 
+.menuItemsP {
+    font-size: 1rem;
+    margin-bottom: 0px;
+}
+
 .menuItem {
     position: relative;
     z-index: 1;
@@ -265,7 +254,6 @@ img {
     margin: 1.5em 0em 1.5em 0em; padding: 0; 
 }
 
-
 /* SECTION 3 */
 
 #section3 {
@@ -274,261 +262,119 @@ img {
     background-color: white;
 }
 
+#greyBox3 {
+    height: 320px;
+    width: 80%;
+    background-color: #5C6779 ;
+    opacity: 0.10;
+    border-radius: 0px 75px 0px 0px;
+    position: absolute;
+    top: -1%;
+    left: -17.5%;
+}
+
+#patternLines2 {
+    width: 25%;
+    position: absolute;
+    top: 15%;
+    left: -5%;
+}
+
 #familyGatheringDiv {
     position: relative;
 }
 
 #familyGatheringHeading {
- margin-top: 15em;
+ margin-top: 18em;
 }
 
 #slideSelections {
-    /* CHANGE OPACITY WHEN SELECTED */
     color: #4C4C4C;
     opacity: 0.5;
     margin-top: 5em;
     position: relative;
 }
 
+#familyGathering1 {
+    color: black;
+
+}
+
+#familyGathering1, #familyGathering2, #familyGathering3:hover {
+    cursor: pointer;
+}
+
+#section3HR{
+    position: absolute;
+    top: -2%;
+    right: 107%;
+    height: 1px;
+    width: 100px;
+    border: 1px solid #9E7F66;
+    opacity: 100%;
+}
+
+/* SECTION 4 */
+
+#section4 {
+    background-image: url('images/homepage/ready-bg-desktop.jpg');
+    width: 1440px;
+    height: 240px;
+    color: white;
+}
+
+#section4 h2 {
+   margin-top: 11.5%;
+   margin-left: 9.3%;
+}
+
+#section4 .btn {
+    margin-top: 20%;
+}
+
+/* FOOTER */
+footer {
+    width: 1440px;
+    height: 240px;;
+    background-color: black;
+    color: white;
+}
+
+.footerSection {
+   padding: 6.2% 6.2% 0% 6.2%;
+}
+
+/* BOOKINGS.HTML CSS */
+
+#bookingHeader {
+    background-image: url('images/booking/hero-bg-desktop.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1440px;
+    height: 600;
+    color: white;
+    padding: 4em 8.2em;
+}
+
+nav {
+    margin-top: 50px;
+}
+
+#bookingHeader h1 {
+    margin-bottom: ;
+}
+
+
+
+
+
+
+
+
+
+
 /* MEDIA QUERIES */
 
 /* TABLET: 425 - 768 */
 /* MOBILE: 320 - 425 */
-
-
-
-
-/* LAPTOP: 768  - 1024 */
-
-@media only screen and (max-width: 1024px) {
-    body {
-        max-width: 1440px;
-    }
-
-    .container {
-        margin: 1em 3em;
-    }
-
-    header h1 {
-        margin-top: 2em;
-    }
-
-    img {
-        margin-left: 4em;
-  
-    }
-
-    /* TYPOGRAPHY */
-
-    p {
-        font-size: 1.5rem;
-    }
-
-    h2 {
-        font-size: 3rem;
-    }
-
-    .section1Header p {
-        font-size: 1.5rem;
-    }
-
-
-/* TABLET: 425 - 768 */
-
-
-
-
-/* MOBILE: 320 - 425 */
-
-
-
-
-
-
-
-
-
-
-/* 
-
-h1 {
-    font-weight: 700;
-    color: white;
-    padding: 65px 0px 130px 10px;
-    font-size: 2.5rem;
-}
-
-#section1 {
-    height: 1463px;
-}
-
-#headerContent {
-    padding: 0px 0px 153px 167px;
-    width: 50%;
-}
-
-#edHeader {
-    color: white;
-    font-weight: 300;
-    font-size: 8vh;
-    line-height: 85px;
-    letter-spacing: -0.8px;
-    margin-bottom: 35px;
-}
-
-.pWhite {
-    color: white;
-    font-size: 1.9vh;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 30px;
-    letter-spacing: -0.225px;
-    margin-bottom: 35px;
-}
-
-.button-white {
-    background-color: transparent;
-    color: white;
-    border: 1px solid white;
-    letter-spacing: 2px;
-    padding: 20px 45px;
-}
-
-#headerBlack {
-    height: 100%;
-    width: 33%;
-    background-color: ;
-    position: absolute;
-    bottom: 0px;
-    left: -1%;
-}
-
-main {
-  
-    background-color: white;
-}
-
-#enjoyablePlaceDesktop {
-    position: relative;
-    top: -65px;
-    margin-left: 167px;
-    margin-bottom: 9%;
-    z-index: 1;
-}
-
-#enjoyablePlaceHeader {
-    display: block;
-    text-align: left;
-    width: 30%;
-    position: absolute;
-    right: 10%;
-    bottom: -55%;
-    line-height: 27px;
-}
-
-#enjoyablePlaceHeader>h2 {
-   font-weight: 700;
-   margin-bottom: 4%;
-   font-size: 2.5rem;
-   line-height: 60px;
-}
-
-#greyBox {
-    height: 320px;
-    width: 895px;
-    background-color: #5C6779;
-    opacity: 0.10;
-    border-radius: 0px 75px 0px 0px;
-    position: absolute;
-    top: 132%;
-    z-index: -auto;
-}
-
-/* RIGHT SECTION */
-
-#theMostLocallyDesktop {
-    position: absolute;
-    top: 193% ;
-    left: 40%;
-    margin-left: 167px;
-    z-index: 1;
-}
-
-#theMostLocallyHeader {
-    display: block;
-    text-align: left;
-    width: 30%;
-    position: absolute;
-    left: 10%;
-    bottom: -155%;
-    line-height: 27px;
-}
-
-#theMostLocallyHeader>h2 {
-   font-weight: 700;
-   margin-bottom: 4%;
-   font-size: 2.5rem;
-   line-height: 60px;
-}
-
-#greyBoxRight {
-    height: 320px;
-    width: 65%;
-    background-color: #5C6779;
-    opacity: 0.10;
-    border-radius: 75px 0px 0px 0px;
-    position: absolute;
-    top: 232%;
-    right: 0px;
-    z-index: -auto;
-}
-
-.lines {
-    position: relative;
-    left: 82%;
-    top: 220px;
-    z-index: 1;
-    width: 160px;
-    height: 6px;
-    background-color: #9E7F66;
-    margin-bottom: 8px;
-}
-
-/* HIGHLIGHTS MENU SECTION */
-
-#highlightsMenuSection {
-    width: 1440px;
-    height: 761px;
-    display: flex;
-    position: relative;
-    top: -80px;
-    background-color: black;
-    color: white;
-    display: flex;
-}
-
-
-
-#highlightsMenuHeader {
-    display: block;
-    text-align: left;
-    width: 30%;
-    position: absolute;
-    left: 10%;
-    bottom: 40%;
-    line-height: 27px;
-}
-
-#highlightsMenuHeader>h2 {
-    font-weight: 700;
-    margin-bottom: 4%;
-    font-size: 2.5rem;
-    line-height: 60px;
-   
- }
-
- #highlightsMenuFood {
-     justify-content: stretch;
- } */
-
 
