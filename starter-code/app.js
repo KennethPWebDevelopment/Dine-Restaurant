@@ -1,3 +1,5 @@
+// INDEX.HTML
+
 // SECTION 3 SLIDE
 
 $('#familyGathering1, #familyGathering2, #familyGathering3').click(function () {
@@ -28,3 +30,32 @@ $('#familyGathering1, #familyGathering2, #familyGathering3').click(function () {
         $("#section3HR").css({top: '70%', right: '107%', position:'absolute'});
     }
 });
+
+// BOOKING.HTML
+
+var minusIcon = $("#minusIcon"); 
+var plusIcon = $("#plusIcon"); 
+
+// DECREMENT THE AMOUNT OF PEOPLE
+
+minusIcon.click(function () {
+    var minusNumOfPeople = parseInt($("#numOfPeople").html());
+    minusNumOfPeople--;
+    $("#numOfPeople").text(minusNumOfPeople);
+
+    if ($("#numOfPeople").html() < 1) {
+        $("#numOfPeople").text(0);
+    }
+})
+
+// INCREMENT THE AMOUNT OF PEOPLE
+
+plusIcon.click(function() {
+    var plusNumOfPeople = parseInt($("#numOfPeople").html()); 
+    plusNumOfPeople ++;
+    $("#numOfPeople").text(plusNumOfPeople);
+
+    if ($("#numOfPeople").html() > 15) {
+        $("#numOfPeople").text(15);
+    }
+    })

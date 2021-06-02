@@ -64,6 +64,15 @@ p {
     position: relative;
 }
 
+#enjoyablePlaceDesktopImg, 
+#locallySourcedDesktopImg,
+#familyGatheringImg {
+    -webkit-box-shadow: 0px 4px 25px -1px rgba(151,151,151,0.27); 
+    box-shadow: 0px 4px 25px -1px rgba(151,151,151,0.27);
+}
+
+
+
 #enjoyablePlaceDesktopImg {
     margin-left: 4em;
     position: relative;
@@ -125,13 +134,13 @@ a:visited{
 /* HEADER */
 
 #header {
-    width: 1440px;
+  width: 1440px;
   height: 820px;
   color: white;
   background-image: url('images/homepage/hero-bg-desktop.jpg');
   background-size: 100%;
   background-repeat: no-repeat;
-  padding: 4em 4em;
+  padding: 0.1em 4em;
 }
 
 #headerText p {
@@ -344,7 +353,11 @@ footer {
    padding: 6.2% 6.2% 0% 6.2%;
 }
 
-/* BOOKINGS.HTML CSS */
+/* BOOKINGS.HTML */
+
+nav {
+    margin-top: 50px;
+}
 
 #bookingHeader {
     background-image: url('images/booking/hero-bg-desktop.jpg');
@@ -353,23 +366,102 @@ footer {
     width: 1440px;
     height: 600;
     color: white;
-    padding: 4em 8.2em;
+    padding: 0.1em 8.2em;
 }
 
-nav {
-    margin-top: 50px;
+/* RESERVATION FORM */
+
+#bookingForm {
+    position: relative;
+    display: flex;
+    justify-content: center;
 }
 
-#bookingHeader h1 {
-    margin-bottom: ;
+form {
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    padding: 1em 2em;
+    background-color: white;
+    -webkit-box-shadow: 0px 4px 25px -1px rgba(151,151,151,0.27); 
+    box-shadow: 0px 4px 25px -1px rgba(151,151,151,0.27);
+    color: black;
 }
 
+.input1 {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 0.6em 1em 0.6em 1em;
+    outline: none;
+}
 
+.input2 {
+    width: 20%;
+    margin: 0em 0em 1.3em 1.26em;
+    padding: 0.3em 1.1em;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+}
 
+.input2b {
+    margin: 0em 0em 1.3em 1.3em;
+}
 
+select {
+    width: 20%;
+    padding: 0.45em 1em 0.45em 1em;
+    margin-left: 1.38em;
+    border: none;
+    border-bottom: 1px solid black;
+}
 
+#amountOfPeople {
+    border-bottom: 1px solid black;
+    align-content: center;
+    text-align: center;
+}
 
+#minusIcon{
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    padding: 20px;
+    width: 13%;
+}
 
+#plusIcon {
+    position: absolute;
+    top: -5%;
+    right: 10%;
+    padding: 20px;
+    width: 12.6%;
+}
+
+form #button {
+width: 100%;
+}
+
+/* BOOKINGS SECTION 1 */
+
+#bookingSection1 {
+    height: 320PX;
+    width: 1440px;
+    background-color: white;
+    z-index: -1;
+}
+
+#bookingGrayBox {
+position: absolute;
+left: 0%;
+}
+
+#bookingPatternLines {
+    position: absolute;
+    left: 50%;
+    top: 55%;
+}
 
 
 

@@ -18,8 +18,6 @@
 
 <body>
 
-
-
   <!-- HEADER   -->
 
   <div id="bookingHeader" class="container-fluid">
@@ -36,23 +34,44 @@
       <div id="bookingForm" class="col-6">
         <form action="#">
           <label for="Name"></label>
-          <input type="text" placeholder="Name">
-          <label for="Name"></label>
-          <input type="text" placeholder="Email">
+          <input class="input1" type="text" placeholder="Name" required>
+
+          <label for="Email"></label>
+          <input class="input1 mb-4" type="text" placeholder="Email" required> 
+
+          <label for="Pick a date">Pick a date</label>
+          <input class="input2" type="text" placeholder="MM" required>
+          <input class="input2" type="text" placeholder="DD" required>
+          <input class="input2" type="text" placeholder="YYYY" required> 
+
+          <label for="Pick a time">Pick a time</label>
+          <input class="input2 input2b" type="text" placeholder="09" required>
+          <input class="input2 input2b" type="text" placeholder="00" required>
+          <select id="Pick a time" name="cars">
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+          </select> 
+
+          <div id="amountOfPeopleDiv" class="position-relative">
+          <h4 id="amountOfPeople" class="pb-3 mt-1 mb-4"><span id="numOfPeople">4</span> people</h4>
+          <img id="minusIcon" position src="images/icons/icon-minus.svg" alt="minus icon">
+          <img id="plusIcon" src="images/icons/icon-plus.svg" alt="plus icon">
+          </div>
+
+
+          <button type="submit" id="button"class="btn btn-primary blackButton mt-1 mb-4"><a href="booking.html">MAKE RESERVATION</a></button>
         </form>
-
-        Name
-        Email
-        Pick a date
-        Pick a time
-
-        Make Reservation
       </div>
-
     </div>
-
   </div>
 
+  <!-- SECTION 1 -->
+
+  <div id="bookingSection1" class="container-fluid position-relative">
+    <img id="bookingGrayBox" src="images/patterns/pattern-curve-bottom-right.svg" alt="">
+    <img id="bookingPatternLines" src="images/patterns/pattern-lines.svg" alt="">
+
+  </div>
 
   <!-- FOOTER -->
 
