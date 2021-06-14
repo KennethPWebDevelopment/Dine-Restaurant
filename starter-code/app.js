@@ -22,7 +22,7 @@ $('#familyGathering1, #familyGathering2, #familyGathering3').click(function () {
         $("#section3HR").css({top: '34%', right: '107%', position:'absolute'});
     } else {
         $("#familyGatheringHeader").html("Social Events")
-        $("#familyGatheringParagraph").html("Are you looking to have a larger social event? No problem! We’re more than happy to cater for big parties. We’ll work with you to make your event a hit with everyone")
+        $("#familyGatheringParagraph").html("Are you looking to have a larger social event? No problem! We’re more than happy to cater for big parties. We’ll work with you to make your event a hit with everyone.")
         $("#familyGatheringImg").attr("src", "images/homepage/social-events-desktop.jpg")
         $(this).css('color', 'black');
         $('#familyGathering1').css('color', '#4C4C4C');
