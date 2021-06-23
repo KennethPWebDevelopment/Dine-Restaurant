@@ -1,23 +1,32 @@
-body {
+* {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
     font-family: 'Spartan', sans-serif;
-    max-width: 100%;
-    margin: 0 auto;
-
 }
+
+img {
+    width: 100%;
+}
+
 
 /* LAYOUT */
 
 .container {
-    padding: 0px;
-    margin: 0px;
-    overflow: hidden;
+    max-width: 1100px;
+
 }
 
 .container-fluid {
-    padding: 0em 5em;
+    max-width: 1100px;
+    padding: 0em 40px;
+    margin: 0 auto;
 }
+
+.section1Rows {
+    height: 570px;
+}
+
 
 /* TYPOGRAPHY */
 
@@ -70,24 +79,35 @@ p {
     box-shadow: 0px 4px 25px -1px rgba(151,151,151,0.27);
 }
 
-
-
 #enjoyablePlaceDesktopImg {
-    margin-left: 4em;
-    position: relative;
-    top: -10%;
-    width: 65vh;
+    width: 100%;
 }
 
 #locallySourcedDesktopImg {
     position: relative;
-    top: -12%;
-    width: 65vh;
+    top: 100px;
+    left: 125px;
 }
 
-#familyGatheringImg {
-    width: 90%;
+#familyGathering {
+    content: url('images/homepage/family-gathering-desktop@2x.jpg');
+    width: 100%;
 }
+
+#specialEvents {
+    content: url('images/homepage/special-events-desktop@2x.jpg');
+    width: 100%;
+    position: absolute;
+    display: none;
+}
+
+#socialEvents {
+    content: url('images/homepage/social-events-desktop@2x.jpg');
+    width: 100%;
+    position: absolute;
+    display: none;
+}
+
 
 /* BUTTONS */
 
@@ -111,6 +131,7 @@ a:visited{
 #button {
     outline: none !important;
     box-shadow: none;
+
 }
 
 .btn:hover,
@@ -130,7 +151,6 @@ a:visited{
     color: black !important;
 }
 
-
 /* HEADER */
 
 #header {
@@ -140,11 +160,7 @@ a:visited{
   background-size: 100%;
   background-repeat: no-repeat;
   padding: 0.1em 4em;
-  overflow: auto;
-}
-
-#headerText {
-
+  position: relative;
 }
 
 #headerText p {
@@ -161,8 +177,18 @@ a:visited{
 
 /* SECTION 1 */
 
+#enjoyablePlaceDiv {
+    position: relative;
+    top: -15%;
+}
+
+#locallySourcedDiv {
+    position: relative;
+}
+
 .patternDivide {
-    margin-bottom: 3.4em;
+    width: 15%;
+    margin-bottom: 3em;
 }
 
 #patternLines1 {
@@ -174,7 +200,7 @@ a:visited{
 
 .section1Header1 {
    position: relative;
-   bottom: -180px;
+   bottom: -200px;
    left: 100px;
    width: 40%;
 }
@@ -184,35 +210,26 @@ a:visited{
     width: 40%;
 }
 
-
 #greyBox1 {
-    height: 320px;
-    width: 895px;
-    background-color: #5C6779 ;
-    opacity: 0.10;
-    border-radius: 0px 75px 0px 0px;
+    width: 150%;
     position: absolute;
-    top: 37%;
-    left: -11.5%;
+    top: 50%;
+    left: -38%;
     z-index: -1;
 }
 
 #greyBox2 {
-    height: 320px;
-    width: 895px;
-    background-color: #5C6779;
-    opacity: 0.10;
-    border-radius: 75px 0px 0px 0px;
-    float: right;
+    width: 150%;
     position: absolute;
-    top: 35%;
-    right: -66.2%;
+    top: 61%;
+    right:-56.5%;
     z-index: -1;
 }
 
 /* SECTION 2 */
 
 #section2 {
+    margin-top: 112px;
     padding-bottom: 10%;
     background-color: black;
     color: white;
@@ -226,7 +243,8 @@ a:visited{
 
 #highlightsMenuFood {
     margin-top: 20%;
-    margin-left: 3.7em;
+    padding-left: 6em;
+    width: 57%;
 }
 
 img {
@@ -234,9 +252,14 @@ img {
     padding-bottom: 0px;
 }
 
+#section2 h3 {
+    margin-left: 23px;
+}
+
 .menuItemsP {
     font-size: 1rem;
     margin-bottom: 0px;
+    margin-left: 23px;
 }
 
 .menuItem {
@@ -246,8 +269,8 @@ img {
 
 .patternLine {
     position: absolute;
-    top: 14px;
-    right: 20px;
+    top: 3px;
+    right: -10%;
     z-index: -1;
 
 }
@@ -267,13 +290,11 @@ img {
 
 #greyBox3 {
     height: 320px;
-    width: 80%;
-    background-color: #5C6779 ;
-    opacity: 0.10;
-    border-radius: 0px 75px 0px 0px;
+    width: 100%;
     position: absolute;
     top: -23%;
-    left: -17.5%;
+    left: -32%;
+    z-index: -1;
 }
 
 #patternLines2 {
@@ -285,10 +306,13 @@ img {
 
 #familyGatheringDiv {
     position: relative;
+    padding-right: 100px;
+    margin-bottom: 100px;
+    z-index: 1000;
 }
 
 #familyGatheringHeading {  
-    margin: 15% 0%;
+    margin: 45px 0px;
 }
 
 #slideSelections {
@@ -298,12 +322,12 @@ img {
     position: relative;
 }
 
-#familyGathering1 {
+#familyGatheringBtn {
     color: black;
 
 }
 
-#familyGathering1, #familyGathering2, #familyGathering3:hover {
+#familyGatheringBtn, #specialEventsBtn, #socialEventsBtn:hover {
     cursor: pointer;
 }
 
@@ -320,10 +344,10 @@ img {
 /* SECTION 4 */
 
 #section4 {
-    background-image: url('images/homepage/ready-bg-tablet@2x.jpg');
+    background-image: url('images/homepage/ready-bg-desktop@2x.jpg');
+    background-size: 100%;
     color: white;
     background-repeat: no-repeat;
-    background-size: 100%;
 }
 
 #section4 h2 {
@@ -340,6 +364,10 @@ footer {
     color: white;
 }
 
+footer p {
+    text-transform: uppercase;
+}
+
 .footerSection {
    padding: 6.2% 0% 0%;
 }
@@ -354,7 +382,6 @@ nav {
     background-image: url('images/booking/hero-bg-desktop.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
-    height: 600;
     color: white;
     padding: 0.1em 9em;
 }
@@ -371,7 +398,7 @@ form {
     position: absolute;
     width: 80%;
     top: 50%;
-    padding: 1em 2em;
+    padding: 1em 1.7em;
     background-color: white;
     -webkit-box-shadow: 0px 4px 25px -1px rgba(151,151,151,0.27); 
     box-shadow: 0px 4px 25px -1px rgba(151,151,151,0.27);
@@ -433,11 +460,15 @@ form #button {
 width: 100%;
 }
 
+form #button>a {
+text-decoration: none;
+color: inherit;
+}
+
 /* BOOKINGS SECTION 1 */
 
 #bookingSection1 {
     height: 320PX;
-    width: 1440px;
     background-color: white;
     z-index: -1;
 }
@@ -460,9 +491,6 @@ left: 0%;
 /* TABLET: 425 - 1200 */
 
 @media only screen and (max-width: 1199px) {
-    body {
-    
-    }
 
 /* TYPOGRAPHY */
 
@@ -502,17 +530,19 @@ p {
 
 /* IMAGES */
 
+#enjoyablePlaceDiv {
+    top: -50px;
+}
+
 #enjoyablePlaceDesktopImg {
     content: url("images/homepage/enjoyable-place-tablet@2x.jpg");
     right: 0px;
     left: 0px;
     margin: 0em;
-    width: 80%;
 }
 
 #locallySourcedDesktopImg {
     content: url("images/homepage/locally-sourced-tablet@2x.jpg");
-    width: 145%;
     top: 0px;
     right: 0px;
     left: 0px;
@@ -521,9 +551,19 @@ p {
     margin-left: 26px;
 }
 
-#familyGatheringImg {
-    content: url("images/homepage/family-gathering-tablet@2x.jpg");
-    width: 75%;
+#familyGathering {
+    content: url('images/homepage/family-gathering-tablet@2x.jpg');
+    width: 80vh;
+}
+
+#specialEvents {
+    content: url('images/homepage/special-events-tablet@2x.jpg');
+    width: 80vh;
+}
+
+#socialEvents {
+    content: url('images/homepage/social-events-tablet@2x.jpg');
+    width: 80vh;
 }
 
 /* HEADER */
@@ -540,7 +580,7 @@ p {
  #header h2 a {
      display: flex;
      justify-content: center;
-     margin-top: 60%;
+     margin-top: 70%;
 }
 
 h1 {
@@ -564,7 +604,15 @@ h1 {
       position: relative;
   }
 
+#header {
+    height: 1300px;
+}
+
   /* SECTION1 */
+
+  .section1Rows {
+    height: 100%;
+}
 
   #enjoyablePlaceDiv, #locallySourcedDiv {
       display: flex;
@@ -612,7 +660,8 @@ h1 {
   }
 
   #highlightsMenuFood {
-      width: 75%;
+      width: 100%;
+      padding: 2em;
       margin: 0px auto;
   }
 
@@ -640,6 +689,10 @@ h1 {
     display: flex;
     justify-content: center;
     margin: 3.5em 0em 2.5em 0em;
+}
+
+#bookATable {
+    margin: 0px;
 }
 
 /* SLIDE SELECTION HOVER EFFECT */
@@ -686,6 +739,10 @@ h1 {
 }
 
 /* SECTION 4 */
+#section4 {
+    background-image: url('images/homepage/ready-bg-tablet@2x.jpg');
+    background-size: 100%;
+}
 
 #section4 {
     text-align: center;
@@ -701,9 +758,19 @@ h1 {
 
 /* FOOTER */
 
-#footerText1 {
+.footerSection {
+    position: relative;
+}
+
+footer #footerLogo {
+    color: red;
     margin: 0px;
     padding: 0px;
+}
+
+#footerText1 p {
+ position: absolute;
+ right: 45%;
 }
 
 .footerText2 {
@@ -711,8 +778,269 @@ h1 {
   }
 
 
+  /* BOOKINGS PAGE */
+
+#bookingHeader {
+    background-image: url('images/booking/hero-bg-tablet@2x.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 75vh;
+}
+
+#bookingHeader h1 {
+    text-align: center;
+}
+
+#bookingHeader p {
+    text-align: center;
+    width: 80%;
+}
+
+#bookingPatternLines {
+    display: none;
+}
+
+  form {
+    width: 60%;
+    margin-top: 2em;
+    top: 0px;
+  }
+
+  #bookingGrayBox {
+      display: none;
+  }
+
+  #bookingSection1 {
+      padding: 11em
+  }
 
 
 
 /* MOBILE: 767px */
 
+@media only screen and (max-width: 767px) {
+
+    /* LAYOUT */
+
+    .container {
+        margin: 65px;
+    }
+
+    .container-fluid {
+        padding: 0em 0.5em;
+    }
+
+    /* TYPOGRAPHY */
+
+    h3, p{
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 1.6em;
+        margin-top: 1.7em;
+    }
+
+    h4 {
+        font-size: 1.8em;
+        font-weight: 600;
+        margin-bottom: 1.5em;
+    }
+
+    p {
+       font-size: 1em;
+       width: 95%;
+    }
+
+    /* IMAGES */
+
+    #familyGathering {
+        content: url('images/homepage/family-gathering-mobile@2x.jpg');
+        width: 70vh;
+    }
+    
+    #specialEvents {
+        content: url('images/homepage/special-events-mobile@2x.jpg');
+        width: 70vh;
+    }
+    
+    #socialEvents {
+        content: url('images/homepage/social-events-mobile@2x.jpg');
+        width: 70vh;
+    }
+
+    /* BUTTONS */
+
+    #familyGatheringHeading .btn {
+        width: 50%;
+    }
+
+    /* HEADER */
+  
+    #header {
+        background-image: url('images/homepage/hero-bg-mobile@2x.jpg');
+   } 
+
+    #header h2 a {
+        margin-top: 70%;
+   }
+
+    #header h1 {
+       width: 100%;
+   }
+
+    #header p {
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+/* SECTION1 */
+
+    #greyBox1 {
+    display: none;
+}
+
+    #greyBox2 {
+    display: none;
+}
+
+    #patternLines1 {
+    display: none;
+}
+
+    #enjoyablePlaceDiv {
+    position: absolute;
+    top: 125%;
+}
+
+    #enjoyablePlaceDesktopImg {
+    content: url('images/homepage/enjoyable-place-mobile@2x.jpg');
+}
+
+    #locallySourcedDiv {
+    margin: 7em 0em 3em 2em;
+}
+
+    #locallySourcedDesktopImg {
+    content: url('images/homepage/locally-sourced-mobile@2x.jpg');
+    width: 95%;
+}
+
+    .section1Header1 {
+    width: 90%;
+    margin-top: 41em;
+    margin-bottom: 0px;;
+}
+
+    .section1Header2 {
+    width: 90%;
+    margin-bottom: 7em;
+}
+
+/* SECTION 2 */
+
+    #highlightsMenuHeader {
+    margin-top: 7em;
+    margin-bottom: 0px;
+    width: 90%;
+}
+
+    #highlightsMenuFood { 
+    padding: 0px;
+}
+
+    .section2PatternLine {
+    display: none;
+}
+
+    #section2Img1 {  
+   content: url('images/homepage/salmon-mobile@2x.jpg'); 
+}
+
+    #section2Img2 {
+    content: url('images/homepage/beef-mobile@2x.jpg'); 
+ }
+
+    #section2Img3 {
+    content: url('images/homepage/chocolate-mobile@2x.jpg'); 
+ }
+
+    #section2 {
+        padding-bottom: 0px;
+    }
+
+    /* SECTION 3 */
+
+    #patternLines2, #greyBox3 {
+        display: none;
+    }
+
+    #events {
+        margin: 3em 0em;
+    }
+
+    #slideSelections {
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    .slideSelectionOptions:after {    
+        background: none repeat scroll 0 0 transparent;
+        bottom: -5px;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 200%;
+        position: absolute;
+        background: #9E7F66;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+      }
+      .slideSelectionOptions:hover:after { 
+        width: 10%; 
+        left: 45%; 
+      }
+      
+     #familyGatheringHeader {
+         font-size: 3.2rem;
+     }
+
+     #familyGatheringHeading p {
+        width: 90%;
+        font-size: 1.2rem;
+     } 
+
+     /* SECTION 4 */
+     #section4 {
+         background-image: url('images/homepage/ready-bg-mobile@2x.jpg');
+     }
+
+     /* FOOTER */
+
+     footer #logo {
+        font-size: 1.8em;
+     }
+
+     footer h2 {
+         text-align: center;
+         margin-top: 1.5em;
+     }
+
+     #footerText1 p {
+        position: relative;
+        text-align: center;
+        right: 0%;
+    }
+
+     footer p  {
+        margin-top: 1em;
+        right: 0%;
+        font-size: 1.5rem;
+        line-height: 1.8em;
+    }
+
+    .footerText2 {
+        margin: 1.5em 0em;
+        margin-bottom: 8em;
+    }
+}

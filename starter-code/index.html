@@ -37,17 +37,16 @@
   </header>
 
   <main>
-    
     <!-- SECTION 1 -->
     <section id="section1">
       <div class="container-fluid">
-        <div class="row">
-          <div id="enjoyablePlaceDiv" class="col-xl-6 col-lg-12 sectionOneImgs">
-            <img id="enjoyablePlaceDesktopImg" src="images/homepage/enjoyable-place-desktop.jpg"
+        <div class="section1Rows row">
+          <div id="enjoyablePlaceDiv" class="col-lg-12 col-xl-6 sectionOneImgs">
+            <img id="enjoyablePlaceDesktopImg" src="images/homepage/enjoyable-place-desktop@2x.jpg"
               alt="Enjoyable place image">
-            <div id="greyBox1"></div>
+            <img id="greyBox1" src="images/patterns/pattern-curve-top-right.svg" alt="">
           </div>
-          <div class="col-xl-6 col-lg-12 section1Header1">
+          <div class="col-lg-12 col-xl-6 section1Header1">
             <img class="patternDivide" src="images/patterns/pattern-divide.svg" alt="divider line">
             <h2>Enjoyable place for all the family</h2>
             <p>Our relaxed surroundings make dining with us a great experience for everyone. We can even arrange
@@ -55,19 +54,19 @@
           </div>
         </div>
     
-        <div class="row container-fluid">
-          <div class="col-xl-6 col-lg-12 section1Header2 order-xl-1 order-sm-2">
+        <div class="section1Rows row">
+          <div class="col-lg-12 col-xl-6 section1Header2 order-xl-1 order-sm-2">
             <img class="patternDivide" src="images/patterns/pattern-divide.svg" alt="divider line">
             <h2>The most locally sourced food</h2>
             <p> All our ingredients come directly from our farm or local fishery. So you can be sure that you’re
               eating the freshest, most sustainable food.</p>
           </div>
     
-          <div id="locallySourcedDiv"class="col-xl-6 col-lg-12 section1Header1 order-xl-2  order-sm-1">
-            <img id="locallySourcedDesktopImg" src="images/homepage/locally-sourced-desktop.jpg"
+          <div id="locallySourcedDiv"class="col-lg-12 col-xl-6 order-xl-2  order-sm-1">
+            <img id="locallySourcedDesktopImg" src="images/homepage/locally-sourced-desktop@2x.jpg"
               alt="The most locally sourced image">
-            <div id="greyBox2"></div>
-            <img id="patternLines1" src="images/patterns/pattern-lines.svg" alt="">
+           <img id ="greyBox2" src="images/patterns/pattern-curve-top-left.svg" alt="">
+            <!-- <img id="patternLines1" src="images/patterns/pattern-lines.svg" alt=""> -->
           </div>
         </div>
         </div>
@@ -77,8 +76,8 @@
 
     <!-- SECTION 2 HEADER -->
 <section id="section2" class="">
-  <div class="container-fluid">
-    <div id="highlightsMenuSection" class="row container-fluid">
+  <div class="container">
+    <div id="highlightsMenuSection" class="row container">
       <div id="highlightsMenuHeader" class="col-xl-6 col-lg-12">
         <img class="patternDivide" src="images/patterns/pattern-divide.svg" alt="divider line">
         <h2>A few highlights from our menu</h2>
@@ -91,11 +90,11 @@
       <div id="highlightsMenuFood" class="col-xl-6 col-lg-12">
         <div class="container">
           <div class="row">
-            <div class="col-4 menuItem">
-              <img src="images/homepage/salmon-desktop-tablet.jpg" alt="seared salmon fillet">
-              <img class="patternLine" src="images/patterns/pattern-divide.svg" alt="divider line">
+            <div class="col-sm-12 col-md-4 menuItem">
+              <img id="section2Img1" class="section2Imgs" src="images/homepage/salmon-desktop-tablet.jpg" alt="seared salmon fillet">
+              <img class="patternLine section2PatternLine" src="images/patterns/pattern-divide.svg" alt="divider line">
             </div>
-            <div class="col-8">
+            <div class="col-sm-12 col-md-8">
               <h3>Seared Salmon Fillet</h3>
               <p class="menuItemsP"> Our locally sourced salmon served with a refreshing buckwheat summer salad.</p>
             </div>
@@ -104,11 +103,11 @@
           <hr id="hr">
 
           <div class="row">
-            <div class="col-4 menuItem">
-              <img src="images/homepage/beef-desktop-tablet.jpg" alt="rosemary filet mignon">
-              <img class="patternLine" src="images/patterns/pattern-divide.svg" alt="divider line">
+            <div class="col-sm-12 col-md-4 menuItem">
+              <img id="section2Img2" class="section2Imgs" src="images/homepage/beef-desktop-tablet.jpg" alt="rosemary filet mignon">
+              <img class="patternLine section2PatternLine" src="images/patterns/pattern-divide.svg" alt="divider line">
             </div>
-            <div class="col-8">
+            <div class="col-sm-12 col-md-8">
               <h3>Rosemary Filet Mignon</h3>
               <p class="menuItemsP">Our prime beef served to your taste with a delicious choice of seasonal sides.</p>
             </div>
@@ -117,11 +116,11 @@
           <hr id="hr">
 
           <div class="row">
-            <div class="col-4 menuItem">
-              <img src="images/homepage/chocolate-desktop-tablet.jpg" alt="summer fruit choclate mousse">
-              <img class="patternLine" src="images/patterns/pattern-divide.svg" alt="divider line">
+            <div class="col-sm-12 col-md-4 menuItem">
+              <img id="section2Img3" class="section2Imgs" src="images/homepage/chocolate-desktop-tablet.jpg" alt="summer fruit choclate mousse">
+              <img class="patternLine section2PatternLine" src="images/patterns/pattern-divide.svg" alt="divider line">
             </div>
-            <div class="col-8">
+            <div class="col-sm-12 col-md-8">
               <h3>Summer Fruit Chocolate Mousse</h3>
               <p class="menuItemsP">Creamy mousse combined with summer fruits and dark chocolate shavings.</p>
             </div>
@@ -137,12 +136,17 @@
     <section id="section3">
       <div class="container-fluid">
         <div class="row">
-          <div id="familyGatheringDiv" class="col-xl-7 col-sm-12">
-            <div id="greyBox3"></div>
-            <img id="familyGatheringImg" src="images/homepage/family-gathering-desktop.jpg" alt="Family Gathering">
+          <div id="familyGatheringDiv" class="col-sm-12 col-xl-7">
+            <!-- <div id="greyBox3"></div> -->
+            <img id="greyBox3" src="images/patterns/pattern-curve-top-right.svg" alt="">
+            <div id="events">
+              <div id="specialEvents"></div>
+              <div id="socialEvents"></div>
+              <div id="familyGathering"></div>
+            </div>
             <img id="patternLines2" src="images/patterns/pattern-lines.svg" alt="">
           </div>
-          <div id="familyGatheringHeading" class="col-xl-5 col-sm-12 d-flex flex-sm-column d-xl-block">
+          <div id="familyGatheringHeading" class="col-sm-12 col-xl-5 d-flex flex-sm-column d-xl-block">
             <h2 id="familyGatheringHeader" class="order-sm-2">Family Gathering</h2>
             <p id="familyGatheringParagraph" class="order-sm-3">We love catering for entire families. So please bring everyone along for a
               special meal with your
@@ -150,9 +154,9 @@
             <a href="booking.html" id="button" class="btn btn-primary blackButton order-sm-4">BOOK A TABLE</a>
             <div id="slideSelections" class="order-sm-1">
               <hr id="section3HR">
-              <h4 id="familyGathering1" class="slideSelectionOptions">FAMILY GATHERING</h4>
-              <h4 id="familyGathering2" class="slideSelectionOptions">SPECIAL EVENTS</h4>
-              <h4 id="familyGathering3" class="slideSelectionOptions">SOCIAL EVENTS</h4>
+              <h4 id="familyGatheringBtn" class="slideSelectionOptions">FAMILY GATHERING</h4>
+              <h4 id="specialEventsBtn" class="slideSelectionOptions">SPECIAL EVENTS</h4>
+              <h4 id="socialEventsBtn" class="slideSelectionOptions">SOCIAL EVENTS</h4>
             </div>
           </div>
         </div>
@@ -167,7 +171,7 @@
         <div class="col-sm-12 col-xl-8">
           <h2>Ready to make a reservation?</h2>
         </div>
-        <div class="col-sm-12 col-xl-4">
+        <div id="bookATable" class="col-sm-12 col-xl-4">
           <a href="booking.html" id="button" class="btn btn-primary">BOOK A TABLE</a>
         </div>
       </div>
@@ -177,20 +181,20 @@
 
   <!-- FOOTER -->
 
-  <footer class="">
+  <footer>
     <div class="container-fluid">
     <div class="row footerSection">
-      <div class="col-sm-4 col-xl-4">
+      <div class="col-sm-12 col-md-1 col-xl-4">
         <h2><a class="navbar-brand footerLogo" href="#" id="logo">dine</a></h2>
       </div>
 
-      <div class="d-flex col-sm-8 col-xl-4">
-        <p id="footerText1">Marthwaite, Sedbergh <br>
+      <div id="footerText1" class="col-sm-12 col-md-11 col-xl-4">
+        <p>Marthwaite, Sedbergh <br>
           Cumbria <br>
           +00 44 123 4567</p>
       </div>
 
-      <div class="d-flex col-sm-12 col-xl-4 footerText2">
+      <div class="d-flex col-sm-12 col-md-12 col-xl-4 footerText2">
         <p>
           Open Times <br>
           Mon - Fri: 09:00 AM - 10:00 PM <br>
