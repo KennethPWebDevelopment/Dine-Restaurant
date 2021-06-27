@@ -9,6 +9,11 @@ img {
     width: 100%;
 }
 
+body {
+   overflow-x: hidden;
+   position: relative;
+}
+
 
 /* LAYOUT */
 
@@ -85,7 +90,7 @@ p {
 
 #locallySourcedDesktopImg {
     position: relative;
-    top: 100px;
+    top: 175px;
     left: 125px;
 }
 
@@ -194,8 +199,8 @@ a:visited{
 #patternLines1 {
   width: 38%;
   position: absolute;
-  top: 30%;
-  right: -55%;
+  top: 67%;
+  right: -50%;
 }
 
 .section1Header1 {
@@ -211,18 +216,20 @@ a:visited{
 }
 
 #greyBox1 {
-    width: 150%;
+    width: 175%;
+    height: 45%;
     position: absolute;
-    top: 50%;
-    left: -38%;
+    top: 45%;
+    left: -45%;
     z-index: -1;
 }
 
 #greyBox2 {
-    width: 150%;
+    width: 125%;
+    height: 7.5%;
     position: absolute;
-    top: 61%;
-    right:-56.5%;
+    top: 45%;
+    right: -40%;
     z-index: -1;
 }
 
@@ -230,7 +237,7 @@ a:visited{
 
 #section2 {
     margin-top: 112px;
-    padding-bottom: 10%;
+    padding-bottom: 7%;
     background-color: black;
     color: white;
 }
@@ -292,7 +299,7 @@ img {
     height: 320px;
     width: 100%;
     position: absolute;
-    top: -23%;
+    top: -28%;
     left: -32%;
     z-index: -1;
 }
@@ -355,10 +362,11 @@ img {
 }
 
 #section4 .btn {
-    margin-top: 15%;
+    margin-top: 25%;
 }
 
 /* FOOTER */
+
 footer {
     background-color: black;
     color: white;
@@ -492,6 +500,12 @@ left: 0%;
 
 @media only screen and (max-width: 1199px) {
 
+    /* LAYOUT */
+
+    .container {
+        max-width: 950px;
+    }
+
 /* TYPOGRAPHY */
 
 h1{
@@ -548,22 +562,21 @@ p {
     left: 0px;
     bottom: 0px;
     padding: 0px;
-    margin-left: 26px;
 }
 
 #familyGathering {
     content: url('images/homepage/family-gathering-tablet@2x.jpg');
-    width: 80vh;
+    width: 100%;
 }
 
 #specialEvents {
     content: url('images/homepage/special-events-tablet@2x.jpg');
-    width: 80vh;
+    width: 100%;
 }
 
 #socialEvents {
     content: url('images/homepage/social-events-tablet@2x.jpg');
-    width: 80vh;
+    width: 100%;
 }
 
 /* HEADER */
@@ -574,13 +587,13 @@ p {
     background-size: 100%;
     background-repeat: no-repeat;
     padding: 0.1em 4em;
-    height: 1150px;
+    height: 1175px;
   }
 
  #header h2 a {
      display: flex;
      justify-content: center;
-     margin-top: 70%;
+     margin-top: 60%;
 }
 
 h1 {
@@ -604,11 +617,7 @@ h1 {
       position: relative;
   }
 
-#header {
-    height: 1300px;
-}
-
-  /* SECTION1 */
+  /* SECTION 1 */
 
   .section1Rows {
     height: 100%;
@@ -630,15 +639,21 @@ h1 {
     text-align: center;
  }
 
+ .section1Header2 {
+     margin-top: 5%;
+ }
+
  #greyBox1 {
-    top: 60%;
-    left: -35%;
+     height: 100%;
+    top: 25%;
+    left: -125%;
 }
 
 #greyBox2 {
-    width: 600px;
-    top: 125%;
-    right: -50%;
+    height: 10%;
+    width: 55%;
+    top: 49%;
+    right: -6.7%;
 }
 
 .patternDivide {
@@ -651,11 +666,22 @@ h1 {
     right: -40%;
   }
 
-  /* SECTION2 */
+  /* SECTION 2 */
+
+  #section2 {
+      margin-top: 0px;
+  }
+
+  .section2PatternLine {
+      width: 50%;
+      left: 100px;
+      top: 15px;
+  }
 
   #highlightsMenuHeader {
       width: 70%;
       margin: 10% auto;
+      margin-bottom: 5%;
       text-align: center;
   }
 
@@ -665,6 +691,13 @@ h1 {
       margin: 0px auto;
   }
 
+ .section2Imgs {
+     width: 70%;
+ }
+
+ .section2MenuItems {
+      margin-top: 14px;
+}
   /*  SECTION 3 */
 
   #patternLines2 {
@@ -676,7 +709,8 @@ h1 {
   #familyGatheringDiv {
       display: flex;
       justify-content: center;
-    
+      padding-right: 0px;
+    margin-bottom: 0px;
   }
  
   #familyGatheringHeading {
@@ -770,7 +804,7 @@ footer #footerLogo {
 
 #footerText1 p {
  position: absolute;
- right: 45%;
+ right: 42.2%;
 }
 
 .footerText2 {
@@ -821,24 +855,26 @@ footer #footerLogo {
 @media only screen and (max-width: 767px) {
 
     /* LAYOUT */
-
     .container {
-        margin: 65px;
-    }
-
-    .container-fluid {
-        padding: 0em 0.5em;
+       
     }
 
     /* TYPOGRAPHY */
+
+    h2 {
+        font-size: 4em;
+        line-height: 1.3em;
+    
+    }
 
     h3, p{
         text-align: center;
     }
 
     h3 {
-        font-size: 1.6em;
+        font-size: 2.5em;
         margin-top: 1.7em;
+        margin-bottom: 2.3%;
     }
 
     h4 {
@@ -848,41 +884,48 @@ footer #footerLogo {
     }
 
     p {
-       font-size: 1em;
-       width: 95%;
+       font-size: 2em;
+       width: 100%;
+       line-height: 1.7em;
     }
 
     /* IMAGES */
 
     #familyGathering {
         content: url('images/homepage/family-gathering-mobile@2x.jpg');
-        width: 70vh;
+        width: 100%;
     }
     
     #specialEvents {
         content: url('images/homepage/special-events-mobile@2x.jpg');
-        width: 70vh;
+        width: 100%;
     }
     
     #socialEvents {
         content: url('images/homepage/social-events-mobile@2x.jpg');
-        width: 70vh;
+        width: 100%;
     }
 
     /* BUTTONS */
 
     #familyGatheringHeading .btn {
-        width: 50%;
+        width: 70%;
     }
 
     /* HEADER */
   
     #header {
         background-image: url('images/homepage/hero-bg-mobile@2x.jpg');
+        height: 1400px;
+        padding-right: 1em; 
+        padding-left: 1em; 
+        margin-bottom: 0px;
    } 
 
     #header h2 a {
-        margin-top: 70%;
+        margin-top: 69%;
+        font-size: 1.9em;
+        margin-bottom: 9%;
    }
 
     #header h1 {
@@ -891,10 +934,20 @@ footer #footerLogo {
 
     #header p {
     width: 100%;
+    margin-top: 7%;
     margin-bottom: 2em;
+    font-size: 2em;
 }
 
-/* SECTION1 */
+    .btn {
+    width: 70%;
+    font-size: 2em;
+    font-weight: 600;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+/* SECTION 1 */
 
     #greyBox1 {
     display: none;
@@ -910,64 +963,91 @@ footer #footerLogo {
 
     #enjoyablePlaceDiv {
     position: absolute;
-    top: 125%;
+    top: 12.5%;
+    left: 0px;
 }
 
     #enjoyablePlaceDesktopImg {
     content: url('images/homepage/enjoyable-place-mobile@2x.jpg');
+    width: 90%;
 }
 
     #locallySourcedDiv {
-    margin: 7em 0em 3em 2em;
+    margin: 10em 0em 0em 0em;
 }
 
     #locallySourcedDesktopImg {
     content: url('images/homepage/locally-sourced-mobile@2x.jpg');
-    width: 95%;
+}
+
+    #section1 .patternDivide { 
+    margin-bottom: 5em;
 }
 
     .section1Header1 {
     width: 90%;
-    margin-top: 41em;
-    margin-bottom: 0px;;
+    margin-top: 50em;
+    margin-bottom: 0px;
 }
 
     .section1Header2 {
     width: 90%;
+    margin-top: 7em;
     margin-bottom: 7em;
 }
 
 /* SECTION 2 */
 
     #highlightsMenuHeader {
-    margin-top: 7em;
-    margin-bottom: 0px;
-    width: 90%;
+        margin-top: 7em;
+        margin-bottom: 0px;
+        width: 100%;
+}
+
+    #highlightsMenuSection {
+        margin: 0px;
+}
+
+    .menuItem {
+        display: flex;
+        justify-content: center;
+        margin-top: 20%;
+}
+
+    .menuItemsP {
+        font-size: 2em;
+        margin-left: 0px;
 }
 
     #highlightsMenuFood { 
-    padding: 0px;
+        padding: 0px;
 }
 
     .section2PatternLine {
-    display: none;
+        display: none;
 }
 
     #section2Img1 {  
-   content: url('images/homepage/salmon-mobile@2x.jpg'); 
+        content: url('images/homepage/salmon-mobile@2x.jpg'); 
 }
 
     #section2Img2 {
-    content: url('images/homepage/beef-mobile@2x.jpg'); 
+        content: url('images/homepage/beef-mobile@2x.jpg'); 
  }
 
     #section2Img3 {
-    content: url('images/homepage/chocolate-mobile@2x.jpg'); 
+        content: url('images/homepage/chocolate-mobile@2x.jpg'); 
  }
 
-    #section2 {
-        padding-bottom: 0px;
+ .section2Imgs {
+     width: 100%;
+ }
+
+    #section2MenuItems3 {
+        margin-bottom: 5em;
     }
+
+
 
     /* SECTION 3 */
 
@@ -1009,6 +1089,7 @@ footer #footerLogo {
         width: 90%;
         font-size: 1.2rem;
      } 
+
 
      /* SECTION 4 */
      #section4 {
